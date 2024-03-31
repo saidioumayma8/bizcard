@@ -14,7 +14,7 @@ class bisnicecard extends Seeder
      */
     public function run()
     {
-        DB::table('business_cards')->insert([
+        DB::table('buisness_cards')->insert([
             [
                 'name' => 'John Doe',
                 'company' => 'ABC Company',

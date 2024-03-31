@@ -26,4 +26,4 @@ Route::post('register',[UserAuthController::class,'register']);
 Route::post('login',[UserAuthController::class,'login']);
 Route::post('logout',[UserAuthController::class,'logout'])
   ->middleware('auth:sanctum');
-Route::get("list",[BusinessCardController::class,'list']);
+Route::get("list/{id?}",[BusinessCardController::class,'list']);
